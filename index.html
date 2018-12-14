@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="lib/uikit-3/css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="lib/uikit-3/js/uikit.min.js"></script>
+		<script src="lib/uikit-3/js/uikit-icons.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>								
+		<title>Adventure Map - George Washington's Mount Vernon</title>
+	</head>
+	<body>
+	
+		<div id="error" class="uk-position-top-center uk-width-1-1 uk-align-center uk-padding-large error hide">
+			Hmmm... that's not the right answer.  Try again!
+		</div>
+	
+		<div id="panel_intro" class="mv_panel uk-cover-container" uk-height-viewport>
+			<img src="img/Adventure Map_Historic Area_2.jpg" alt="Mansion" uk-cover>
+			<div class="uk-position-bottom-center uk-padding-large">
+				<button id="mv_action_intro" class="uk-button uk-button-primary uk-button-large">Get Started</button>
+			</div>	
+		</div>
+
+		<div id="panel_instructions" class="mv_panel uk-container uk-padding-large hide">
+			<h1>Instructions</h1>
+			<p>These clues and pictures gudie you on a exploration of nine locations on the Mount Vernon estate.  In the upper right corner you will find a map to help you locate your way.</p>
+			<p>At each location read the clue and look around carefully.  You may also want to read the green signs.  Enter your answer in the blank spaces.  One letter in each word will be in a box.  After you have visited all nine locations, use these boxed letters to solve the word puzzle about George Washington.
+			<p>After you've completed the word puzzle, have your answers checked at the guest services desk in the lobby of the Donald W. Reynolds Education Center and Museum.  If your answer to the word puzzle is correct you will recieve a special prize!</p>
+				<button id="mv_action_instructions" class="uk-button uk-button-primary uk-button-large uk-align-center">Let's Begin</button>
+		</div>		
+
+		<div id="panel_1" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/BowlingGreen_Paint_01.jpg" alt="Bowling Green">
+			<h3>Clue #1</h3>
+			<p>While we are accustomed to large lawns at golf courses or parks, in George Washington's time, grass was expensive to plant and maintain.  Guests were very impressed with this huge grassy area.  The Washingtons and their friends might have played games here or talked along the paths on either side of the </p>
+				<input type="text" maxlength='7' value="" class="answer">
+				<button id="mv_action_1" class="uk-button uk-button-primary uk-button-large uk-align-center">Let's Begin</button>
+		</div>	
+		
+	</body>
+</html>

@@ -1,0 +1,31 @@
+body, html {
+ 	background: #ece9e0;
+}
+
+.hide {
+	display: none;
+}
+
+input {
+	border: none;
+	width: 10.5ch;
+	background: 
+		repeating-linear-gradient(90deg, 
+				dimgrey 0, 
+				dimgrey 1ch, 
+				transparent 0, 
+				transparent 1.5ch) 
+			0 100%/100% 2px no-repeat;
+	color: dimgrey;
+	font: 5ch consolas, monospace;
+	letter-spacing: .5ch;
+}
+input:focus {
+	outline: none;
+	color: dodgerblue;
+}
+
+.error {
+	color: #fff;
+	background: #8D2838;
+}
