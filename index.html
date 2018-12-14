@@ -11,7 +11,7 @@
 		<script src="js/script.js"></script>								
 		<title>Adventure Map - George Washington's Mount Vernon</title>
 	</head>
-	<body>
+	<body id="confetti">
 	
 		<div id="error" class="uk-position-top-center uk-width-1-1 uk-align-center uk-padding-large error hide">
 			Hmmm... that's not the right answer.  Try again!
@@ -36,9 +36,127 @@
 			<img src="img/BowlingGreen_Paint_01.jpg" alt="Bowling Green">
 			<h3>Clue #1</h3>
 			<p>While we are accustomed to large lawns at golf courses or parks, in George Washington's time, grass was expensive to plant and maintain.  Guests were very impressed with this huge grassy area.  The Washingtons and their friends might have played games here or talked along the paths on either side of the </p>
-				<input type="text" maxlength='7' value="" class="answer">
-				<button id="mv_action_1" class="uk-button uk-button-primary uk-button-large uk-align-center">Let's Begin</button>
+				<input id="mv_answer_1" type="text" maxlength='7' value="" class="answer" style="width: 10.5ch">
+				<button id="mv_action_1" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+			<h5 class="uk-text-bold">THINK ABOUT IT</h5>
+			<p><i>What would you do on this large lawn?</i></p>
+		</div>	
+
+		<div id="panel_2" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/ShoeHouse_Paint_02.jpg" alt="Shoemaker Shop">
+			<h3>Clue #2</h3>
+			<p>Do these shoes look like the ones you wear?  Did you know that in George Washington's time shoes were made to wear on either foot?  Outch!  William Lee, Washington's enslaved valet for many years served as Mount Vernon's shoemaker after injuring his knees.  This job allowed lee to...</p>
+				<input id="mv_answer_2" type="text" maxlength='3' value="" class="answer" style="width: 4.5ch">
+			<p>... while he worked</p>	
+				<button id="mv_action_2" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>	
+
+		<div id="panel_3" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/SpinningHouse_Paint_03.jpg" alt="Spinning House">
+			<h3>Clue #3</h3>
+			<p>In George Washington's time, making cloth was a time-consuming job done completely by hand.  Sheep that supplied fleece to make wool were raised here at Mount Vernon.  Do you see the spinning wheel?  Skilled enslaved women, such as Alce (Alsee), turned a spinning wheel to twist the wool fiber into thread, which was women into cloth on a </p>
+				<input id="mv_answer_3" type="text" maxlength='4' value="" class="answer" style="width: 6ch">
+				<button id="mv_action_3" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>	
+
+		<div id="panel_4" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/SaltHouse_Paint_02a.jpg" alt="Salt House">
+			<h3>Clue #4</h3>
+			<p>Did you know that in George Washington's time there were no refrigerators?  Each year he bought hundreds of pounds of salt, which was very expensive, to help preserve food that could easily spoil. </p>
+				<input id="mv_answer_4" type="text" maxlength='4' value="" class="answer" style="width: 6ch">
+			<p> that were caught, cleaned, and packed into barrels with sale were safe to eat months later.</p>	
+				<button id="mv_action_4" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
 		</div>	
 		
+		<div id="panel_5" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/Piazza_Paint_02.jpg" alt="Piazza">
+			<h3>Clue #5</h3>
+			<p>Have you ever seen a porsch as large as this one?  What do you think the Washingtons did here?  The Mansion was not air-conditioned, so on hot days or in the evening, family and guests gathered on the porch, ot piazza, to enjoy the breezes.  Besides having tea or other refreshments, the Washingtons could watch ships travel up and down the Potomac... </p>
+				<input id="mv_answer_5" type="text" maxlength='5' value="" class="answer" style="width: 7.5ch">
+				<button id="mv_action_5" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>	
+
+		<div id="panel_6" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/LowerGarden_Paint_01.jpg" alt="Lower Garden">
+			<h3>Clue #6</h3>
+			<p>The lower garden produced a variety of fruits, vegetables, and herbs.  It was overseen by Mrs. Washington, and maintained by hired and enslaved gardeners.  Why do you think this garden is close to the Mansion?  The food grown here was either preserved and stored in the Manson's cellar or prepared for dinner in the...</p>
+				<input id="mv_answer_6" type="text" maxlength='7' value="" class="answer" style="width: 10.5ch">
+				<button id="mv_action_6" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>	
+
+		<div id="panel_7" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/WashHouse_Paint_01.jpg" alt="Wash House">
+			<h3>Clue #7</h3>
+			<p>Doing laundry in the Washington's time was hot and time-consuming work.  Enslaved laundresses, such as Dolsey and Vina, carried heavy buckets of water from the well to the wash house.  There were no washing machines, so Dolsey and Vina scrubbed clothes and linens by hand in large pots of hot water with soap they made from animal fat and...</p>
+				<input id="mv_answer_7" type="text" maxlength='3' value="" class="answer" style="width: 4.5ch">
+				<button id="mv_action_7" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>	
+				
+		<div id="panel_8" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/CoachHouse_Paint_03.jpg" alt="Coach House">
+			<h3>Clue #8</h3>
+			<p>In George Washington's time there were no paved streets or highways, so travel could be time-consuming and difficult.  Why do you think Washington sometimes rode in a two-wheeled vehicle liek the one displayed here?  Pulled by a horse, this lightweight riding...</p>
+				<input id="mv_answer_8" type="text" maxlength='5' value="" class="answer" style="width: 7.5ch">
+			<p>...was perfect for navigating narrow country roads.	</p>
+				<button id="mv_action_8" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>					
+
+		<div id="panel_9" class="mv_panel uk-container uk-padding-large hide">
+			<img src="img/HaHaWall_Paint_02.jpg" alt="Coach House">
+			<h3>Clue #9</h3>
+			<p>This "invisible fence" kept livestock away from the Mansion, but didn't block the view of George Washington's beautiful estate.  The walls have a top level that is even with teh Mansion's lawn, and a ditch on the other pasture side.  Watch out!  If you don't see this wall, built into the hill, you might fall off and cause others to laugh.  Perhaps that is why it is called a...</p>
+				<input id="mv_answer_9" type="text" maxlength='4' value="" class="answer" style="width: 6ch">
+			<p>...wall.	</p>
+				<button id="mv_action_9" class="uk-button uk-button-primary uk-button-large uk-align-center">Next Challenge</button>
+		</div>	
+
+		<div id="panel_10" class="mv_panel uk-container uk-padding-large">
+			<h3>Puzzle</h3>
+			<p>Here are all of your answers so far...</p>
+			<ol class="key">
+				<li>BOWLI<span class="highlight">N</span>G</li>
+				<li>SI<span class="highlight">T</span></li>
+				<li>L<span class="highlight">O</span>OM</li>
+				<li>FI<span class="highlight">S</span>H</li>
+				<li>RIVE<span class="highlight">R</span></li>
+				<li>K<span class="highlight">I</span>TCHEN</li>
+				<li>L<span class="highlight">Y</span>E</li>
+				<li><span class="highlight">C</span>OACH</li>
+				<li><span class="highlight">H</span>AHA</li>
+			</ol>
+			<img src="img/HaHaWall_Paint_02.jpg" alt="Coach House">
+			<h3>Now Solve This Puzzle</h3>
+			<p>George Washington was the leader of the American Revolution and the first President of the United States.  Because of his dedication and hard work, he is often called the Father of...</p>
+				<table>
+					<tr>
+						<td>
+							<input id="mv_answer_10a" type="text" maxlength='3' value="" class="answer" style="width: 4.5ch">
+							<br>
+							<span class="index">9 6 4</span>
+						</td>
+					</tr>
+				</table>					
+				<table>					
+					<tr>	
+						<td>
+							 <input id="mv_answer_10b" type="text" maxlength='2' value="" class="answer" style="width: 3ch">
+							<br>
+							<span class="index">8 3</span>
+						</td>
+						<td>
+							<span class="large">u</span><br>
+							<span class="index">&nbsp;</span>
+						</td>
+						<td>
+							<input id="mv_answer_10c" type="text" maxlength='4' value="" class="answer" style="width: 6ch">
+							<br>
+							<span class="index">1 2 5 7</span>
+						</td>
+					</tr>
+				</table>
+			<p>After you solve the word puzzle, keep this page visable on your device and take your device to one of the desks in the Education Center and claim your prize.</p>
+				<button id="mv_action_9" class="uk-button uk-button-primary uk-button-large uk-align-center">Check Answer</button>
+
+		</div>	
 	</body>
 </html>
