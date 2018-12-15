@@ -14,10 +14,21 @@ input {
 				dimgrey 1ch, 
 				transparent 0, 
 				transparent 1.5ch) 
-			0 100%/100% 2px no-repeat;
+			0 100%/100% 2px no-repeat !important;
 	color: dimgrey;
-	font: 5ch consolas, monospace;
-	letter-spacing: .5ch;
+	font: 5ch consolas, monospace !important;
+	letter-spacing: .5ch !important;
+	padding: 0em !important;
+	margin-top: 0em !important;
+	margin-right: 0em !important;
+	margin-bottom: 0em !important;
+	margin-left: 0em !important;
+	word-spacing: normal !important;
+	text-transform: none !important;
+	text-indent: 0px !important;
+	text-shadow: none !important;
+	display: inline-block !important;
+	text-align: start !important;	
 }
 input:focus {
 	outline: none;
@@ -166,3 +177,5 @@ input:focus {
 		transform: rotateX(359deg);
 	}
 }
+
+
