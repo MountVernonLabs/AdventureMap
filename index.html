@@ -14,6 +14,21 @@
 	</head>
 	<body id="confetti">
 	
+		<div id="map" class="uk-position-top-right uk-padding-small uk-light brown">
+			<ul class="uk-iconnav">
+				<li><a href="#map-modal" uk-icon="icon: location" uk-toggle></a></li>
+			</ul>
+		</div>
+
+		<div id="map-modal" class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog fixed">
+				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+			</div>
+			<div class="pano" uk-overflow-auto>
+				<img src="img/map.jpg">
+			</div>
+		</div>
+
 		<div id="error" class="uk-position-top-center uk-width-1-1 uk-align-center uk-padding-large error hide">
 			Hmmm... that's not the right answer.  Try again!
 		</div>
